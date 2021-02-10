@@ -1,0 +1,13 @@
+////
+/// Layout of the page
+///
+/// @group Elements
+///
+////
+
+/// Text default font and color
+body {
+  background: url('../../../img/logo.png') no-repeat $white; 
+  background-size: 10rem;
+  font-family: $font; font-weight: $fw-regular; color: $color-text;
+}
