@@ -15,8 +15,10 @@
   <select name="lang" class="uppercase header__opt-lang">
     <option value="" autocomplete>fr</option>
     <option value="en">en</option>
-    
 </select>
-
+ 
+{# {% for lang in polylang_menu %}
+        <li class="nav-drop-item"><a class="nav-link" href="{{lang.url}}">{{lang.name}}</a></li>
+{% endfor %} #}
   {# {% include 'Partials/Components/_nav-main.twig' %} #}
 </header>

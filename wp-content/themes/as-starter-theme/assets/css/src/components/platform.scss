@@ -1,0 +1,27 @@
+.home .platform{
+    position: relative;
+    margin-top: 23rem;
+    margin-left: 30rem;
+}
+
+section.platform div{
+    margin-top: 3rem;
+    margin-right: 10rem;
+}
+
+.platform p:first-of-type{
+    font-size: 25px;
+    font-weight: $fw-bold;
+    line-height: 1.56;
+    color: $ocean; 
+    margin-bottom: -2rem;
+}
+ 
+.platform .haricot-reverse{
+    position: absolute;
+    width: 67rem;
+    height: 56rem;
+    z-index: -1;
+    right: -6.8rem;
+    top: -5rem;
+}

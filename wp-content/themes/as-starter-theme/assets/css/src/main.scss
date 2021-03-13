@@ -4,6 +4,9 @@
 ///
 ////
 
+body,html{
+    font-size: 14px;
+}
 /// Settings
 @import 'settings/colors';
 @import 'settings/fonts';
@@ -28,15 +31,24 @@
 @import 'objects/forms';
 @import 'objects/highlights';
 
-// Components
+// header
 @import 'components/header';
 
 // Components home
 @import 'components/exploitez';
 @import 'components/intelligence';
 @import 'components/crawler';
-@import 'components/pilot.scss';
+@import 'components/pilot';
+@import 'components/platform';
+@import 'components/solution';
 
+
+//Component block 
+@import 'components/switch';
+@import 'components/presentation';
+@import 'components/fontText';
+
+//header 
 @import 'components/footer';
 
 // @import 'components/'

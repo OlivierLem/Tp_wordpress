@@ -1,0 +1,54 @@
+.home .solutions{
+    margin-top: 30rem;
+
+}
+.solutions h3{
+    text-align: center;
+    
+    
+}
+.solutions .arc{
+    position: absolute;
+    width: 191rem;
+    height: 230rem;
+    left: 0;
+    top: 396rem;
+}
+
+.solutions__grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    justify-self: center;
+    margin-left: 8rem;
+    $i: 1;
+    $c: 1;
+    $l: 1;
+    @while ($l <= 2) {
+        @while ($c <= 3) {
+        &-#{$i} {
+            grid-column: $c;
+            grid-row: $l;
+        }
+        $c: $c+1;
+        $i: $i+1;
+        }
+        $c:1;
+        $l: $l+1;
+    }
+    & div{
+        width: 100%;
+    }
+    & div img{
+        width: 5rem;
+    }
+    & div p:first-of-type{
+        font-weight: $fw-bold;
+        color: black;
+    }
+    & div p:last-of-type{
+        width: 30rem;
+        font-weight: $fw-light;
+    }
+}

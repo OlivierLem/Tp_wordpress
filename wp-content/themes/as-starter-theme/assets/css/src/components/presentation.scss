@@ -1,0 +1,43 @@
+.presentation{
+    display: flex;
+    margin-left: -10rem;
+    margin-top: 6rem;
+    width: 140rem;
+
+}
+.presentation__text{
+    margin-top: 12rem;
+
+    & h2{
+        font-size: 46px;
+        width: 54rem;
+        font-weight: 700;  
+        color: $grey;
+    }
+    & p{  
+        color: $another-grey;
+        font-size: 30px;
+        width: 52rem;
+        margin-top: -1rem;
+        font-weight: 300;  
+        margin-bottom: 5rem;
+    }
+    & a{
+        background-color: $orange;
+        color: #fff;
+        padding: 1.5rem 3rem;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+
+
+.presentation__illustration{
+    margin-right: 1rem;
+
+    & img{
+    width: 66rem;
+    }
+}

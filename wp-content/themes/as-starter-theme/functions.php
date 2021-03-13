@@ -114,6 +114,11 @@ class StarterSite extends Timber\Site {
         // This 'site' context below allows you to access main site information like the site title or description.
         $context['site'] = $this;
         return $context;
+
+        if( function_exists('pll_the_languages') ) {
+            $context['polylang_menu'] = pll_the_languages( array( 'raw' => 1 ) );
+            $context['polylang_current_language'] = pll_current_language();
+        }
     }
 }
 

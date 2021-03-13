@@ -1,0 +1,102 @@
+.switch{
+    display: flex;
+    margin-top: 45rem;
+    position: relative;
+
+    &:last-of-type{
+        margin-bottom: 25rem;
+    }
+    &:not(.switch-reverse){
+        margin-left: 13rem;
+    } 
+    &-reverse{
+        flex-flow: row-reverse;
+    }
+
+    
+    &__blocImage img{
+        position: absolute;
+        width: 64rem;
+        
+    }
+    &-reverse:not(.presentation + .switch) &__blocImage img {        
+        background: url(../../../img/haricot-jaune.png) no-repeat;
+        background-position: 4rem 8.5rem;
+        background-size: 81rem 60rem;
+        left: -44rem;
+        top: -13rem;
+        padding: 15rem;
+        padding-left: 23rem;
+        width: fit-content;        
+    }
+    &:not(.switch-reverse):not(.presentation + .switch) &__blocImage img {            
+        background: url(../../../img/haricot-violet.png) no-repeat;
+        background-position: 29rem 5rem;
+        left: 39.6rem;
+        top: -13rem;
+        padding: 15rem;
+        width: fit-content;
+    }
+    
+    &-reverse img{
+        left: 1rem;
+    }
+
+    &__blocText{
+        width: 56rem;
+        margin-top: 7rem;
+    }
+    &-reverse:not(.presentation + .switch) &__blocText:not(.switch-reverse .switch__blocText){
+        margin-left: -5rem;
+    }
+    &-reverse &__blocText{
+        margin-left: 60rem;
+    }
+
+    &:nth-of-type(3) &__blocText-textColor{ 
+        color: $blue;
+    }
+    &:nth-of-type(4) &__blocText-textColor{ 
+        color: $ocean;
+    }
+    &__blocText-textColor{
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.56;
+        color: $red; 
+        margin-bottom: -2rem;
+        font-weight: 700;
+    }
+
+    &__blocText-title{
+        width: 51rem;
+        margin-top: 3rem;
+        font-size: 3.5rem;
+        font-weight: bold;
+        line-height: 1.11;
+        color: #323648;
+    }
+
+    &__blocText-underTitle{
+        width: 32rem;
+        font-size: 1.5rem;   
+        font-weight: 300;  
+        color: $another-grey;
+        margin-bottom: 4rem;
+    }
+
+    &__blocText-link{
+        padding: 1.5rem 4rem;
+        border-radius: 50px;
+        background-color: $blue;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $white;
+    }
+}
+
+.presentation + .switch{
+    justify-content: start;
+    margin-left: auto;
+
+}
