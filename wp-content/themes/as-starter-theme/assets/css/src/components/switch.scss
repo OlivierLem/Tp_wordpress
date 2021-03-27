@@ -19,7 +19,7 @@
         width: 64rem;
         
     }
-    &-reverse:not(.presentation + .switch) &__blocImage img {        
+    &-reverse:not(.fontText + .switch) &__blocImage img {        
         background: url(../../../img/haricot-jaune.png) no-repeat;
         background-position: 4rem 8.5rem;
         background-size: 81rem 60rem;
@@ -29,7 +29,7 @@
         padding-left: 23rem;
         width: fit-content;        
     }
-    &:not(.switch-reverse):not(.presentation + .switch) &__blocImage img {            
+    &:not(.switch-reverse):not(.fontText + .switch) &__blocImage img {            
         background: url(../../../img/haricot-violet.png) no-repeat;
         background-position: 29rem 5rem;
         left: 39.6rem;
@@ -46,7 +46,7 @@
         width: 56rem;
         margin-top: 7rem;
     }
-    &-reverse:not(.presentation + .switch) &__blocText:not(.switch-reverse .switch__blocText){
+    &-reverse:not(.fontText + .switch) &__blocText:not(.switch-reverse .switch__blocText){
         margin-left: -5rem;
     }
     &-reverse &__blocText{
@@ -95,8 +95,9 @@
     }
 }
 
-.presentation + .switch{
+.fontText + .switch{
     justify-content: start;
     margin-left: auto;
+    margin-top: 12rem;
 
 }

@@ -21,11 +21,14 @@ registerBlockType(BLOCK_NAME, {
     },
     paragraphe: {
         type: 'string'
-    }
+    },
+    paragrapheBis: {
+      type: 'string'
+  }
   },
 
   edit: props => {
-    const { attributes: { title, subtitle, paragraphe }, setAttributes, className } = props
+    const { attributes: { title, subtitle, paragraphe, paragrapheBis }, setAttributes, className } = props
     return (
 
     <section className=''>
@@ -54,9 +57,18 @@ registerBlockType(BLOCK_NAME, {
             keepplaceholderonfocus='true'
             placeholder={__('Paragraphe')}
             className={className}
-            value={subtitle}
-            onChange={(newSubtitle) => {
-            setAttributes({ subtitle: newSubtitle })
+            value={paragraphe}
+            onChange={(newParagraphe) => {
+            setAttributes({ paragraphe: newParagraphe })
+            }}
+        />
+        <PlainText
+            keepplaceholderonfocus='true'
+            placeholder={__('ParagrapheBis')}
+            className={className}
+            value={paragrapheBis}
+            onChange={(newParagrapheBis) => {
+            setAttributes({ paragrapheBis: newParagrapheBis })
             }}
         />
         </div>
@@ -64,7 +76,7 @@ registerBlockType(BLOCK_NAME, {
     )
   },
 
-  save: ({ attributes: { title, subtitle, paragraphe } }) => {
+  save: ({ attributes: { title, subtitle, paragraphe, paragrapheBis } }) => {
     
     return(
         <section className="fontText">
@@ -74,6 +86,7 @@ registerBlockType(BLOCK_NAME, {
             <div className='fontText__main'>
                 <h3>{subtitle}</h3>
                 <p>{paragraphe}</p>
+                <p>{paragrapheBis}</p>
             </div>
         </section>
     )

@@ -10,6 +10,7 @@ import './example/5-repeater/block.js'
 import './example/6-ssr-block/block.js'
 
 // home page
-import './home/bloc-image/block.js'
+import './home/bloc-presentation/block.js'
 import './home/bloc-font-text/block.js'
 import './home/switch-text/block.js'
+import './home/bloc-solutions/block.js'

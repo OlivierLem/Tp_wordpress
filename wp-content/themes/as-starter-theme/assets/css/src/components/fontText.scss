@@ -1,0 +1,48 @@
+.fontText{
+    display: flex;
+    position: relative;
+    margin-top: 22rem;
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: -13rem;
+        left: -40rem;
+        width: 190.6rem;
+        height: 112rem;
+        background: url(../../../img/bg-arrondi-bleu.png);
+        background-repeat: no-repeat;
+        background-size: 191rem 80rem;
+    }
+
+    &__title h1{
+        width: 60rem;
+        position: relative;
+        color: $blue;
+        font-size: 6.8rem;
+        font-weight: bold;
+        margin-left: -8rem;
+    }
+    &__title h1::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15.2rem;
+        left: 0;
+        width: 19rem;
+        height: 1.3rem;
+        background-color: $blue;
+    }
+
+    &__main{
+        margin-top: 3.5rem;
+    }
+    &__main h3{
+        width: 46rem;
+        font-size: 2.5rem;
+    }
+    &__main p {
+        width: 39rem;
+        font-size: 1.4rem;
+    }
+}
